@@ -1,1 +1,10 @@
-/*    /index.html   200 
+/*    /index.html   200
+
+# Force HTTPS
+http://memee.orincore.com/* https://memee.orincore.com/:splat 301!
+
+# Handle all routes for SPA
+/signup    /index.html   200
+/login     /index.html   200
+/verify-otp /index.html  200
+/post/*    /index.html   200 

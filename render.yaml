@@ -23,4 +23,5 @@ services:
         value: nosniff
     envVars:
       - key: NODE_ENV
-        value: production 
+        value: production
+    healthCheckPath: / 
