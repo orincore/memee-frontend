@@ -7,6 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "build:hash": "tsc && vite build --config vite.config.hash.ts",
+    "deploy": "chmod +x deploy.sh && ./deploy.sh",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
