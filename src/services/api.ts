@@ -1,6 +1,6 @@
 import { Meme } from '../types';
 
-const API_BASE_URL = 'http://localhost:8000';
+const API_BASE_URL = 'https://memeeapi.orincore.com';
 
 function getAuthHeaders() {
   const token = localStorage.getItem('access_token');

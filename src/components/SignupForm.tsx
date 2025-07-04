@@ -3,7 +3,7 @@ import { useNavigate, Link } from 'react-router-dom';
 import axios from 'axios';
 import { Sparkles } from 'lucide-react';
 
-const API_BASE_URL = 'http://localhost:8000';
+const API_BASE_URL = 'https://memeeapi.orincore.com';
 
 const memeBg = 'bg-gradient-to-br from-yellow-200 via-pink-200 to-purple-200 dark:from-gray-900 dark:via-purple-900 dark:to-yellow-900';
 

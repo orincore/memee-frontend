@@ -28,7 +28,7 @@ export const useMemes = (searchTerm: string = '') => {
       const token = localStorage.getItem('access_token');
       if (!token) throw new Error('No access token found. Please log in.');
       const excludeIdsString = shownIds.join(',');
-      const url = `http://localhost:8000/fetch-memes/feed?page=${pageNum}&page_size=10${excludeIdsString ? `&exclude_ids=${excludeIdsString}` : ''}`;
+      const url = `https://memeeapi.orincore.com/fetch-memes/feed?page=${pageNum}&page_size=10${excludeIdsString ? `&exclude_ids=${excludeIdsString}` : ''}`;
       const response = await axios.get(url, {
         headers: {
           Authorization: `Bearer ${token}`,

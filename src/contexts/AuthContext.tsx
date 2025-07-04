@@ -34,7 +34,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       const formData = new FormData();
       formData.append('login_id', loginId);
       formData.append('password', password);
-      const response = await fetch('http://localhost:8000/auth/login', {
+      const response = await fetch('https://memeeapi.orincore.com/auth/login', {
         method: 'POST',
         body: formData
       });
@@ -65,7 +65,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       formData.append('gender', gender);
       formData.append('phone', phone);
       meme_choices.forEach(choice => formData.append('meme_choices', choice));
-      const response = await fetch('http://localhost:8000/auth/signup', {
+      const response = await fetch('https://memeeapi.orincore.com/auth/signup', {
         method: 'POST',
         body: formData
       });

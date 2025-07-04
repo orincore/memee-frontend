@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:8000';
+const API_BASE_URL = 'https://memeeapi.orincore.com';
 
 const LoginForm: React.FC = () => {
   const [form, setForm] = useState({
