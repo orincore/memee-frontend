@@ -499,20 +499,19 @@ function AppContent() {
           Discover, share, and enjoy the best memes! Please login or sign up to access the full experience.
         </p>
         <div className="flex space-x-4">
-          <button
-            onClick={() => setAuthMode('login')}
+          <Link
+            to="/login"
             className="px-6 py-3 bg-purple-500 text-white rounded-xl font-semibold hover:bg-purple-600 transition-colors"
           >
             Login
-          </button>
-          <button
-            onClick={() => setAuthMode('signup')}
+          </Link>
+          <Link
+            to="/signup"
             className="px-6 py-3 bg-green-500 text-white rounded-xl font-semibold hover:bg-green-600 transition-colors"
           >
             Sign Up
-          </button>
+          </Link>
         </div>
-        <AuthModal mode={authMode} onClose={() => setAuthMode(null)} />
       </div>
     );
   }
