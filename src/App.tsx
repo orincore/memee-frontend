@@ -12,7 +12,7 @@ import { useMemes } from './hooks/useMemes';
 import { mockProducts } from './data/mockData';
 import { Category, AuthMode } from './types';
 import { postFetchMemesDark, getMemeById, getSavedMemes, likeMeme, unlikeMeme, saveMeme, unsaveMeme, checkMemeLiked, checkMemeSaved } from './services/api';
-import { Routes, Route, useNavigate, useParams } from 'react-router-dom';
+import { Routes, Route, useNavigate, useParams, Link } from 'react-router-dom';
 import { Heart, Bookmark } from 'lucide-react';
 import VerifyOtp from './components/VerifyOtp';
 import SignupForm from './components/SignupForm';
@@ -594,12 +594,12 @@ function AppContent() {
                 The <span className="font-bold text-pink-500">#1</span> place to discover, share, and laugh at the best memes on the internet!
               </p>
               <div className="flex flex-col sm:flex-row gap-6 mt-2 mb-10 w-full max-w-xl justify-center">
-                <a href="/login" className="w-full sm:w-auto px-10 py-4 bg-white/90 text-purple-700 font-extrabold text-2xl rounded-2xl shadow-xl border-2 border-purple-300 hover:bg-purple-100 hover:text-pink-500 transition-all duration-200 text-center">
+                <Link to="/login" className="w-full sm:w-auto px-10 py-4 bg-white/90 text-purple-700 font-extrabold text-2xl rounded-2xl shadow-xl border-2 border-purple-300 hover:bg-purple-100 hover:text-pink-500 transition-all duration-200 text-center">
                   Login
-                </a>
-                <a href="/signup" className="w-full sm:w-auto px-10 py-4 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-2xl font-extrabold text-2xl shadow-xl border-2 border-pink-300 hover:from-yellow-400 hover:to-pink-500 hover:text-purple-800 transition-all duration-200 text-center">
+                </Link>
+                <Link to="/signup" className="w-full sm:w-auto px-10 py-4 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-2xl font-extrabold text-2xl shadow-xl border-2 border-pink-300 hover:from-yellow-400 hover:to-pink-500 hover:text-purple-800 transition-all duration-200 text-center">
                   Sign Up
-                </a>
+                </Link>
                 <a href="#feed" className="w-full sm:w-auto px-10 py-4 bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 text-white rounded-2xl font-extrabold text-2xl shadow-xl hover:from-yellow-500 hover:to-purple-700 transition-all duration-200 text-center">
                   See Trending Memes 🚀
                 </a>
